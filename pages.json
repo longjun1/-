@@ -1,0 +1,89 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"h5":{
+					"titleNView": false  
+				}
+			}
+		},
+		{
+			"path": "pages/MyEarnings/MyEarnings",
+			"style": {
+				"navigationBarTitleText": "我的收益",
+				"navigationBarBackgroundColor":"#eacda4"
+			}
+		},
+		{
+			"path": "pages/Watch/Watch",
+			"style": {
+				"navigationBarTitleText": "观看列表",
+				"navigationBarBackgroundColor":"#eacda4"
+			}
+		},
+		{
+			"path": "pages/MyCenter/MyCenter",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationBarBackgroundColor":"#eacda4"
+			}
+		},
+		{
+			"path": "pages/Cash/Cash",
+			"style": {
+				"navigationBarTitleText": "提现",
+				"navigationBarBackgroundColor":"#eacda4"
+			}
+		}
+        
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle":"white",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#4E98E8"
+	},
+	"tabBar":{ 
+		"color": "#7A7E83",
+		"selectedColor": "#dc4e0d",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [
+			{
+					"pagePath": "pages/index/index",
+					"iconPath": "static/images/index-0.png",
+					"selectedIconPath": "static/images/index-1.png",
+					"text": "推广列表"
+			},
+			{
+					"pagePath": "pages/MyEarnings/MyEarnings",
+					"iconPath": "static/images/tag-0.png",
+					"selectedIconPath": "static/images/tag-1.png",
+					"text": "我的收益"
+			},
+			{
+					"pagePath": "pages/Watch/Watch",
+					"iconPath": "static/images/hot-0.png",
+					"selectedIconPath": "static/images/hot-1.png",
+					"text": "观看课程"
+			},
+			{
+					"pagePath": "pages/MyCenter/MyCenter",
+					"iconPath": "static/images/center-0.png",
+					"selectedIconPath": "static/images/center-1.png",
+					"text": "个人中心"
+			}
+			
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
